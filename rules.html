@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Terra Ignotta Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script>
+    <script src="game.js"></script>
+    <script src="tests.test.js"></script>
+    <script src="style.css"></script>
+    
+    <body>
+
+        <nav>
+            <a href="index.html">Introduction</a>
+            <a href="rules.html">Rules</a>
+            <a href="examplegames.html">Example Games</a>
+            <a href="startgame.html">Start/Join a Game</a>
+        </nav>
+
+        <h1>The Rules</h1>
+
+            <p>You are a leader preparing for a war that will decide the future. No one knows what that future holds, but you want to side with the victor to ensure that your principles shape the new world. Providence will decide which faction is victorious, but you can decide if that faction is friend or foe.</p>
+
+            <p>Follow these steps in order:</p>
+
+            <ul>
+
+                <h2>Setup</h2>
+
+                <div class="greybox">
+
+                    <li class="stars">Secretly roll an eight sided die, without looking at it. Its result will represent <b>Providence</b>, the ineffable and seemingly random will of the universe which is just as likely to favor any faction as doom it. Providence will determine the winner at the end of the game.</li>
+
+                    <li class="stars">Players choose a faction to play as. The factions all have abilities that set them apart and give them advantages; where those abilities appear, they're marked with the [ ] symbols to differentiate them from the rest of the rules.</li>
+
+                    <ol>
+
+                        <li class="mitsubishi">Mitsubishi - Can join multiple alliances due to their multiplicitous and fractious nature.</li>
+                        <li class="gordian">Gordian - Has a chance of winning out of nowhere at the last minute through subterfuge.</li>
+                        <li class="romanova">Romanova - Can't communicate very well, but has great power to influence everyone's beliefs and strategies.</li>
+                        <li class="mason">Mason - Can make an unrefusable order to join his alliance, creating cooperation through force.</li>
+                        <li class="humanist">Humanist - Can switch alliances, making sure that they're always aligned with whoever's displaying the most greatness.</li>
+                        <li class="cousin">Cousin - Can declare a universal enemy whom no one can side with, dooming that foe in the process.</li>
+                        <li class="utopia">Utopia - Can refuse Providence and try to remake it, at the cost of making themselves less likely to personally benefit.</li>
+                        <li class="europe">Europe - Can influence Providence with hard-won martial might, but only slightly.</li>
+
+                    </ol>
+
+                    <p>(You may have less than eight players for your game. If so, remove factions from the available list like so:</p>
+                    <ul>
+                        <li>If you only have 7, remove Mason;</li>
+                        <li>If you only have 6, remove Romanova;</li>
+                        <li>If you only have 5, remove Cousins;</li>
+                        <li>If you only have 4, perhaps find a different game to play.)</li>
+                    </ul>
+
+                    <li class="stars"><span class="gordian">[Gordian must secretly write down a possible alliance made up of any players of their choice except themself. This is their guess for who's going to end up aligned against them. If this guess is right, Gordian gains an absurd advantage over that alliance.]</span></li>
+
+                    <li class="stars"><span class="romanova">[Romanova must leave and communicate exclusively through private texts, which players cannot show each other until negotiations end.]</span></li>
+                
+                </div>
+
+                <h2>Negotiations</h2>
+
+                <div class="greybox">
+
+                    <li class="stars">Negotiations begin. During negotiations, players can strategize, make promises, and try to convince other players to join them. There are four Alliances (all of them mechanically identical) which players can choose to join: <b>Peace Bonders, Final Victory, Hopeful Heresy</b>, and <b>Individualist Underground</b>.</li>
+
+                    <p>Most of the time, not all of these Alliances will have members. An alliance can have any number of players on it, but at the end of the game you can only win if your alliance has exactly 3 (or it includes <span class="mason">Mason</span>, <span class="humanist">Humanist</span>, or <span class="cousin">Cousin</span>, whose faction abilities could let them win with <span class="mason">4</span>, <span class="humanist">4</span>, or <span class="cousin">2</span> respectively)</p>
+
+                    <p>Each player can join one alliance, or choose to remain alone. <span class="mitsubishi">[Except Mitsubishi, which can join two alliances.]</span> If for any reason Mitsubishi ends up in more alliances than they're allowed, they pick which alliances to stay in and which ones to leave at that moment. A player may only join an alliance with the consent of all the players currently in that alliance.</p>
+
+                    <p>Every five minutes, all players <span class="romanova">[except Romanova]</span> must verbally declare which Alliance<span class="mitsubishi">(s)</span> they're part of, or declare “Nonaligned”.</p>
+
+                    <p>If no Alliances have changed for 3 of these calls, the negotiation phase ends with alliances as they currently are.</p>
+
+                    <p>If all seven players at the table unanimously agree that no one's position is likely to change, they may send a petition to Romanova to end negotiations early. <span class="romanova">[If Romanova accepts, the negotiation phase ends instantly.]</span></p>
+
+                    <p>If 8 of these calls occur (meaning 40 minutes have passed), the negotiation phase ends and any players who aren't able to say which alliance they're in within one minute of the last call are automatically determined to be alone.</p>
+
+                    <li class="stars"><span class="romanova">[Romanova declares one player to be their ally and joins their alliance. They may choose to disable any two</span> [Faction Abilities] <span class="romanova">which haven't already been used.]</span> Only after doing so may they return to the rest of the group.</li>
+
+                </div>
+                
+                <h2>Aftermath</h2>
+
+                <div class="greybox">
+
+                    <li class="stars"><span class="mason">[Mason may force someone into their alliance, even if that person was previously in another alliance.]</span></li>
+
+                    <li class="stars"><span class="humanist">[Humanists may add themselves to an alliance. This does not require that alliance's consent.]</span></li>
+                
+                    <li class="stars"><span class="cousin">[Cousins may remove a single player from any alliance. That person is now alone, and thus in all likelihood cannot win. If their alliance doesn't have enough people, it may also be unable to win.]</span></li>
+                
+                    <li class="stars">Reveal the die.</li>
+
+                    <li class="stars"><span class="utopia">[Utopia may reroll the die, or leave it as it is. If they choose to reroll, they have to keep rolling until the roll is something other than seven. That new result becomes Providence.]</span></li>
+
+                    <li class="stars"><span class="europe">[Europe may decrease Providence by 1, or leave it as it is.]</span></li>
+
+                    <li class="stars"><span class="gordian">[Gordian reveals the paper they wrote at the start of the game. If they correctly guessed the exact membership of an Alliance that they're not in, then that alliance now cannot win, and if it would win, whatever Alliance Gordian is in will win instead.]</span></li>
+
+                    <li class="stars">Any alliance with exactly 3 players, one of which has a number that matches Providence, wins. The <span class="cousin">[Cousin's alliance may win with two players,]</span> <span class="mason">[Mason's alliance may win with four,]</span> and <span class="humanist">[The Humanist's alliance with four.]</span></li>
+
+                </div>
+            
+            </ul>
+
+
+    </body>
+</html>

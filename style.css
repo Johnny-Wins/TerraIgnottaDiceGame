@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+}
+
+.greybox{
+    background-color: #3a3a3a79;
+    border-style: solid;
+    border-color:#3a3a3a;
+    padding: 5px;
+    margin-top: 1em;
+}
+
+li {
+    padding: 5px;
+    padding-left: 3em;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li{
+    padding-left: 1em;
+}
+
+ul ul li{
+    padding-left: 3em;
+}
+
+ul p {
+    padding-left: 3em;
+}
+
+ul ol li {
+    margin-left: 0.5em;
+}
+
+.stars:before
+{
+    content: '\2606';
+    margin: 0 1em;    /* any design */
+    list-style: none;
+    padding: 0px;
+}
+
+.stars{
+    padding-left: 0;
+}
+
+.mitsubishi{
+    color:#45b000
+}
+
+.gordian{
+    color:#ca2533
+}
+
+.romanova{
+    color:#005fac
+}
+
+.mason{
+    color:#6b137b
+}
+
+.humanist{
+    color:#aeaeae
+}
+
+.cousin{
+    color:#4c8ba8
+}
+
+.utopia{
+    color:#f77f57
+}
+
+.europe{
+    color:#0c4da1   
+}
