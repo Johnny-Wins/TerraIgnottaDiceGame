@@ -51,7 +51,7 @@ ul ol li {
 }
 
 .hidden {
-    display: none;
+    display: none;  
 }
 
 .stars:before
@@ -71,7 +71,7 @@ ul ol li {
 }
 
 .gordian{
-    color:#ca2533
+    color:yellow
 }
 
 .romanova{
@@ -96,4 +96,8 @@ ul ol li {
 
 .europe{
     color:#0c4da1   
+}
+
+footer {
+    font-size: smaller;
 }
